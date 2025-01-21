@@ -9,7 +9,7 @@ import firebaseConfig from '../src/helpers/apiKeys.json';
 
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig.firebaseConfig);
 const analytics = getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -5,7 +5,8 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, getAdditionalUserInfo, si
 function App() {
 
   const provider = new GoogleAuthProvider();
-  // provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+  provider.addScope('https://www.googleapis.com/auth/youtube');
+  provider.addScope('https://www.googleapis.com/auth/youtube.readonly');
 
   const auth = getAuth();
   auth.languageCode = 'it';
